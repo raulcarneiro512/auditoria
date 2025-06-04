@@ -1,0 +1,129 @@
+{
+  "blocos": [
+    {
+      "id": 1,
+      "titulo": "CULTURA DE SEGURANÇA",
+      "descricao": "Criar uma cultura de segurança",
+      "cor": "#2979D4",
+      "perguntas": [
+        {
+          "id": "1.1",
+          "titulo": "Identificação do cliente",
+          "perguntas": [
+            {
+              "id": "1.1.1",
+              "texto": "Quais são os marcadores obrigatórios para identificação segura do paciente?",
+              "resposta": null
+            },
+            {
+              "id": "1.1.2", 
+              "texto": "O paciente está utilizando pulseira de identificação?",
+              "resposta": null
+            },
+            {
+              "id": "1.1.3",
+              "texto": "A pulseira contém pelo menos dois identificadores únicos?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "titulo": "Comunicação efetiva",
+          "perguntas": [
+            {
+              "id": "1.2.1",
+              "texto": "As informações críticas são comunicadas de forma clara?",
+              "resposta": null
+            },
+            {
+              "id": "1.2.2",
+              "texto": "Há confirmação de recebimento das informações?",
+              "resposta": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "COMUNICAÇÃO",
+      "descricao": "Melhorar a comunicação entre os prestadores de assistência, os serviços e os indivíduos que recebem a assistência em todo o ciclo do tratamento",
+      "cor": "#8E24AA",
+      "perguntas": [
+        {
+          "id": "2.1",
+          "titulo": "Identificação do cliente",
+          "perguntas": [
+            {
+              "id": "2.1.1",
+              "texto": "Quais são os marcadores obrigatórios para identificação segura do paciente?",
+              "resposta": null
+            },
+            {
+              "id": "2.1.2",
+              "texto": "O processo de identificação é seguido em todos os procedimentos?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "titulo": "Passagem de plantão",
+          "perguntas": [
+            {
+              "id": "2.2.1",
+              "texto": "A passagem de plantão segue protocolo estruturado?",
+              "resposta": null
+            },
+            {
+              "id": "2.2.2",
+              "texto": "Todas as informações relevantes são transmitidas?",
+              "resposta": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "MEDICAÇÃO SEGURA",
+      "descricao": "Melhorar a segurança de medicamentos de alta vigilância",
+      "cor": "#D32F2F",
+      "perguntas": [
+        {
+          "id": "3.1",
+          "titulo": "Armazenamento",
+          "perguntas": [
+            {
+              "id": "3.1.1",
+              "texto": "Os medicamentos estão armazenados adequadamente?",
+              "resposta": null
+            },
+            {
+              "id": "3.1.2",
+              "texto": "Medicamentos de alta vigilância estão identificados?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "titulo": "Administração",
+          "perguntas": [
+            {
+              "id": "3.2.1",
+              "texto": "É realizada dupla checagem na administração?",
+              "resposta": null
+            },
+            {
+              "id": "3.2.2",
+              "texto": "O paciente é identificado antes da administração?",
+              "resposta": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
