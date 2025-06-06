@@ -8,37 +8,149 @@
       "perguntas": [
         {
           "id": "1.1",
-          "titulo": "Identificação do cliente",
+          "titulo": "Divulgação de incidentes sobre a segurança dos pacientes",
           "perguntas": [
             {
               "id": "1.1.1",
-              "texto": "Quais são os marcadores obrigatórios para identificação segura do paciente?",
+              "texto": "Existe um processo documentado e coordenado para divulgar incidentes?",
               "resposta": null
             },
             {
               "id": "1.1.2", 
-              "texto": "O paciente está utilizando pulseira de identificação?",
+              "texto": "O processo de divulgação é analisado e atualizado periodicamente?",
               "resposta": null
             },
             {
               "id": "1.1.3",
-              "texto": "A pulseira contém pelo menos dois identificadores únicos?",
+              "texto": "As pessoas responsáveis por orientar e apoiar o processo de divulgação recebem treinamento em relação à divulgação?",
+              "resposta": null
+            },
+            {
+              "id": "1.1.4",
+              "texto": "É realizado o disclose? Como é feito?",
+              "resposta": null
+            },
+            {
+              "id": "1.1.5",
+              "texto": "No disclouse é oferecido suporte de ordem prática e emocional/psicológica a pacientes, famílias e membros da equipe envolvidos no incidente?",
+              "resposta": null
+            },
+            {
+              "id": "1.1.6",
+              "texto": "Procura-se obter comentários e opiniões dos pacientes, famílias e membros da equipe sobre sua experiência com a divulgação; estas informações são usadas para fazer melhorias nesse processo?",
               "resposta": null
             }
           ]
         },
         {
           "id": "1.2",
-          "titulo": "Comunicação efetiva",
+          "titulo": "Gestão de incidentes sobre a segurança dos pacientes",
           "perguntas": [
             {
               "id": "1.2.1",
-              "texto": "As informações críticas são comunicadas de forma clara?",
+              "texto": "Existe um sistema definido e conhecido por todos para notificação de incidentes, incluindo os processos de notificação, análise, açõe e monitoramento?",
               "resposta": null
             },
             {
               "id": "1.2.2",
-              "texto": "Há confirmação de recebimento das informações?",
+              "texto": "As informações sobre incidentes são divulgadas com todos para que entendam o quê, quando e como relatar incidentes?",
+              "resposta": null
+            },
+            {
+              "id": "1.2.3",
+              "texto": "Existe evidencia de treinamento sobre a resposta imediata a incidentes?",
+              "resposta": null
+            },
+            {
+              "id": "1.2.4",
+              "texto": "A qualidade examina todas as notificações e usa algum critério para priorizar as análises?",
+              "resposta": null
+            },
+            {
+              "id": "1.2.5",
+              "texto": "Existe evidencia da validação das ações propostas mediande a análise de incidentes?",
+              "resposta": null
+            },
+            {
+              "id": "1.2.6",
+              "texto": "As informações sobre as ações e melhorias recomendadas após a análise do incidente são compartilhadas com os pacientes, famílias e membros da equipe?",
+              "resposta": null
+            },{
+              "id": "1.2.7",
+              "texto": "É avaliada a eficácia do sistema de gerenciamento de incidentes e são feitas melhorias com base nas opiniões e comentários recebidos?",
+              "resposta": null
+            }
+          
+          ]
+        },
+        {
+          "id": "1.3",
+          "titulo": "Divulgação de incidentes sobre a segurança dos pacientes",
+          "perguntas": [
+            {
+              "id": "1.3.1",
+              "texto": "Existe um processo documentado e coordenado para divulgar incidentes?",
+              "resposta": null
+            },
+            {
+              "id": "1.3.2", 
+              "texto": "O processo de divulgação é analisado e atualizado periodicamente?",
+              "resposta": null
+            },
+            {
+              "id": "1.3.3",
+              "texto": "As pessoas responsáveis por orientar e apoiar o processo de divulgação recebem treinamento em relação à divulgação?",
+              "resposta": null
+            },
+            {
+              "id": "1.3.4",
+              "texto": "É realizado o disclose? Como é feito?",
+              "resposta": null
+            },
+            {
+              "id": "1.3.5",
+              "texto": "No disclouse é oferecido suporte de ordem prática e emocional/psicológica a pacientes, famílias e membros da equipe envolvidos no incidente?",
+              "resposta": null
+            },
+            {
+              "id": "1.3.6",
+              "texto": "Procura-se obter comentários e opiniões dos pacientes, famílias e membros da equipe sobre sua experiência com a divulgação; estas informações são usadas para fazer melhorias nesse processo?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "titulo": "Divulgação de incidentes sobre a segurança dos pacientes",
+          "perguntas": [
+            {
+              "id": "1.4.1",
+              "texto": "Existe um processo documentado e coordenado para divulgar incidentes?",
+              "resposta": null
+            },
+            {
+              "id": "1.4.2", 
+              "texto": "O processo de divulgação é analisado e atualizado periodicamente?",
+              "resposta": null
+            },
+            {
+              "id": "1.4.3",
+              "texto": "As pessoas responsáveis por orientar e apoiar o processo de divulgação recebem treinamento em relação à divulgação?",
+              "resposta": null
+            },
+            {
+              "id": "1.4.4",
+              "texto": "É realizado o disclose? Como é feito?",
+              "resposta": null
+            },
+            {
+              "id": "1.4.5",
+              "texto": "No disclouse é oferecido suporte de ordem prática e emocional/psicológica a pacientes, famílias e membros da equipe envolvidos no incidente?",
+              "resposta": null
+            },
+            {
+              "id": "1.4.6",
+              "texto": "Procura-se obter comentários e opiniões dos pacientes, famílias e membros da equipe sobre sua experiência com a divulgação; estas informações são usadas para fazer melhorias nesse processo?",
               "resposta": null
             }
           ]
@@ -49,7 +161,7 @@
       "id": 2,
       "titulo": "COMUNICAÇÃO",
       "descricao": "Melhorar a comunicação entre os prestadores de assistência, os serviços e os indivíduos que recebem a assistência em todo o ciclo do tratamento",
-      "cor": "#8E24AA",
+      "cor": "#2979D4",
       "perguntas": [
         {
           "id": "2.1",
@@ -59,37 +171,212 @@
               "id": "2.1.1",
               "texto": "Quais são os marcadores obrigatórios para identificação segura do paciente?",
               "resposta": null
+            }
+           
+          ]
+        },
+        {
+          "id": "2.2",
+          "titulo": "Lista de abreviações perigosas (LAP)",
+          "perguntas": [
+            {
+              "id": "2.2.1",
+              "texto": "A LAP de abreviações perigosas inclui abreviações, símbolos e designações de doses conforme identificados por uma lista de abreviações passíveis de erros?",
+              "resposta": null
             },
             {
-              "id": "2.1.2",
-              "texto": "O processo de identificação é seguido em todos os procedimentos?",
+              "id": "2.2.2",
+              "texto": "A LAP é implementada e se aplicada a toda documentação relacionada a medicações, seja manuscrita ou digitada como texto livre em um computador?",
+              "resposta": null
+            },
+            {
+              "id": "2.2.3",
+              "texto": "Os formulários impressos da organização relacionados ao uso de medicamentos não incluem nenhuma abreviação, símbolo ou designação de dose identificados na LAP?",
+              "resposta": null
+            },
+            {
+              "id": "2.2.4",
+              "texto": "As abreviações, símbolos e designações de dose identificados na lista na LAP não são usados em nenhum formulário ou rótulo gerado pela farmácia?",
+              "resposta": null
+            },
+            {
+              "id": "2.2.5",
+              "texto": "Os membros da equipe recebem treinamento e informações sobre a LAP por ocasião da integração quando são feitas mudanças na lista?",
+              "resposta": null
+            },
+            {
+              "id": "2.2.6",
+              "texto": "A LAP é atualizada e são implementadas mudanças necessárias nos processos de gestão de medicações?",
+              "resposta": null
+            },
+            {
+              "id": "2.2.7",
+              "texto": "É feita uma auditoria do cumprimento das normas estabelecidas na LAP e são implementadas mudanças no processo, com base nas questões identificadas?",
               "resposta": null
             }
           ]
         },
         {
-          "id": "2.2",
-          "titulo": "Passagem de plantão",
+          "id": "2.3",
+          "titulo": "Conciliação medicamentosa como prioridade estratégica",
           "perguntas": [
             {
-              "id": "2.2.1",
-              "texto": "A passagem de plantão segue protocolo estruturado?",
+              "id": "2.3.1",
+              "texto": "Existe uma política de conciliação medicamentosa e um processo para coletar e usar informações completas sobre as medicações dos pacientes em transições do cuidado?",
               "resposta": null
             },
             {
-              "id": "2.2.2",
-              "texto": "Todas as informações relevantes são transmitidas?",
+              "id": "2.3.2",
+              "texto": "As funções e responsabilidades para fazer a conciliação medicamentosa estão definidas?",
+              "resposta": null
+            },
+            {
+              "id": "2.3.3",
+              "texto": "Uma equipe de coordenação multidisciplinar lidera o plano da organização de manutenção da conciliação medicamentosa?",
+              "resposta": null
+            },
+            {
+              "id": "2.3.4",
+              "texto": "Existe evidência documentada de que os membros da equipe (inclusive médicos) que são responsáveis pela conciliação medicamentosa recebem capacitação?",
+              "resposta": null
+            },
+            {
+              "id": "2.3.5",
+              "texto": "A conformidade com o processo de reconciliação medicamentosa é monitorada e as melhorias são feitas quando necessárias?",
               "resposta": null
             }
+           
+          ]
+        },
+        {
+          "id": "2.4",
+          "titulo": "Conciliação medicamentosa nas transições de atendimento",
+          "perguntas": [
+            {
+              "id": "2.4.1",
+              "texto": "(pacientes internados) Antes ou durante a admissão, é realizada a conciliação medicamentosa em parceria com os pacientes, famílias, cuidadores e outros, conforme apropriado?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.2",
+              "texto": "(pacientes internados) A conciliação medicamentosa é usada para gerar prescrições de medicações durante a admissão ou é comparado com as prescrições de medicações atuais e toda discrepância entre as medicações é identificada, resolvida e documentada?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.3",
+              "texto": "(pacientes internados) o médico se baseia na conciliação medicamentosa para as prescrições de medicações atuais e também para recomendar em SBAR as medicações durante a transferência ou a alta?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.4",
+              "texto": "(pacientes internados) O paciente, cuidador e a farmácia recebem uma lista atualizada e exata das medicações que o paciente deve receber após a alta?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.5",
+              "texto": "(ambulatório) É realizada a conciliação medicamentosa no ambulatório?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.6",
+              "texto": "(ambulatório) Na admissão em ambulatório é registrado em PEP a conciliação medicamentosa em parceria com o paciente, família, cuidadores e outros?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.7",
+              "texto": "(ambulatório) Nas consultas ambulatoriais subsequentes, a conciliação medicamentosa é comparada com a lista de medicações atuais e toda discrepância é identificada e documentada?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.8",
+              "texto": "(ambulatório) As discrepâncias entre medicações são resolvidas em parceria com pacientes e famílias ou comunicadas ao médico, e são adotadas medidas para resolver essas discrepâncias?é realizado esse registro em prontuário?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.9",
+              "texto": "(ambulatório) O paciente e o prestador de serviços seguinte recebem uma lista exata e atualizada das medicações que o paciente deveria estar recebendo na última consulta ou por ocasião da alta da clínica?",
+              "resposta": null
+            },
+            {
+              "id": "2.4.10",
+              "texto": "(ambulatório) A conciliação medicamentosa é iniciada com todos os pacientes no momento da decisão de admissão?",
+              "resposta": null
+            }
+           
+           
+          ]
+        },
+        {
+          "id": "2.5",
+          "titulo": "Lista de verificação para cirurgia segura",
+          "perguntas": [
+            {
+              "id": "2.5.1",
+              "texto": "A equipe concorda em usar uma check list de cirurgia segura de três fases em procedimentos realizados no centro cirúrgico?",
+              "resposta": null
+            },
+            {
+              "id": "2.5.2",
+              "texto": "O check list de cirurgia segura é usado em todos os procedimentos cirúrgicos?",
+              "resposta": null
+            },
+            {
+              "id": "2.5.3",
+              "texto": "Existe um processo para se monitorar a conformidade do check list de cirurgia segura?",
+              "resposta": null
+            },
+            {
+              "id": "2.5.4",
+              "texto": "O uso do check list de cirurgia segura é avaliado e os resultados são compartilhados com a equipe?",
+              "resposta": null
+            },
+            {
+              "id": "2.5.5",
+              "texto": "Os resultados da avaliação são usados para aprimorar a implementação e expandir o uso do check list de cirurgia segura?",
+              "resposta": null
+            }
+           
+          ]
+        },
+        {
+          "id": "2.6",
+          "titulo": "Transferência de informações nas transições de cuidado",
+          "perguntas": [
+            {
+              "id": "2.6.1",
+              "texto": "As informações que devem ser comunicadas em transições do cuidado são definidas e padronizadas para situações de transição onde ocorre uma mudança na composição da equipe ou uma mudança de local: admissão, transferência e alta?",
+              "resposta": null
+            },
+            {
+              "id": "2.6.2",
+              "texto": "É realizado o SBAR em todas as transições de atendimento dos pacientes?",
+              "resposta": null
+            },
+            {
+              "id": "2.6.3",
+              "texto": "Durante as transições do cuidado, os clientes e as famílias recebem as informações necessárias para tomar decisões e ajudar o seu próprio tratamento?",
+              "resposta": null
+            },
+            {
+              "id": "2.6.4",
+              "texto": "As informações que são compartilhadas em transições do cuidado são documentadas?",
+              "resposta": null
+            },
+            {
+              "id": "2.6.5",
+              "texto": "A eficácia da comunicação é avaliada e são feitas melhorias com base nas opiniões e comentários recebidos?",
+              "resposta": null
+            }
+           
           ]
         }
       ]
     },
     {
       "id": 3,
-      "titulo": "MEDICAÇÃO SEGURA",
-      "descricao": "Melhorar a segurança de medicamentos de alta vigilância",
-      "cor": "#D32F2F",
+      "titulo": "USO DE MEDICAMENTOS",
+      "descricao": "Garantir o uso seguro de medicações de alto risco.",
+      "cor": "#2979D4",
       "perguntas": [
         {
           "id": "3.1",

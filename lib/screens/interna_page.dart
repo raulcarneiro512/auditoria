@@ -13,6 +13,7 @@ class _InternaPageState extends State<InternaPage> {
   String? _auditorSelecionado;
   String? _setorSelecionado;
   bool _mostrarCampoOutroAuditor = false;
+  final TextEditingController _dataHoraController = TextEditingController();
   final TextEditingController _outroAuditorController = TextEditingController();
 
   final List<String> auditores = [
@@ -165,60 +166,303 @@ class _InternaPageState extends State<InternaPage> {
     (_) => TextEditingController(),
   );
 
+  // Cores para os blocos (seguindo o padrão do RopsPage)
+  final List<String> coresBlocos = [
+    '#2979D4', // Azul
+    '#4CAF50', // Verde
+    '#FF9800', // Laranja
+    '#9C27B0', // Roxo
+    '#F44336', // Vermelho
+    '#00BCD4', // Ciano
+    '#795548', // Marrom
+    '#607D8B', // Azul acinzentado
+    '#E91E63', // Rosa
+    '#3F51B5', // Índigo
+  ];
+
   @override
   void initState() {
     super.initState();
-    _auditorSelecionado = auditores.first;
-    _setorSelecionado = setores.first;
+  }
+
+  Widget _buildPerguntaIndividual(String pergunta, int blocoIndex) {
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 4),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: Colors.grey[300]!),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            pergunta,
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children:
+                ['C', 'NC', 'NA'].map((opcao) {
+                  return Expanded(
+                    child: Column(
+                      children: [
+                        Text(
+                          opcao,
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Radio<String>(
+                          value: opcao,
+                          groupValue: blocosRespostas[blocoIndex][pergunta],
+                          onChanged: (value) {
+                            setState(() {
+                              blocosRespostas[blocoIndex][pergunta] = value!;
+                            });
+                          },
+                          materialTapTargetSize:
+                              MaterialTapTargetSize.shrinkWrap,
+                        ),
+                      ],
+                    ),
+                  );
+                }).toList(),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildBloco(int index) {
+    Color corBloco = _hexToColor(coresBlocos[index]);
+
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 16),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.2),
+            spreadRadius: 2,
+            blurRadius: 8,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Cabeçalho do bloco
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: corBloco,
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(16),
+                topRight: Radius.circular(16),
+              ),
+            ),
+            child: Text(
+              '${index + 1}. ${nomesBlocos[index]}',
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+          ),
+
+          // Conteúdo do bloco
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(16),
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(16),
+                bottomRight: Radius.circular(16),
+              ),
+            ),
+            child: Column(
+              children: [
+                // Perguntas
+                ...blocosPerguntas[index]
+                    .map(
+                      (pergunta) => _buildPerguntaIndividual(pergunta, index),
+                    )
+                    .toList(),
+
+                const SizedBox(height: 16),
+
+                // Campo de considerações
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.grey[50],
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.grey[300]!),
+                  ),
+                  child: TextFormField(
+                    controller: blocosConsideracoes[index],
+                    decoration: const InputDecoration(
+                      labelText: 'Considerações',
+                      border: InputBorder.none,
+                      hintText: 'Digite suas observações...',
+                    ),
+                    maxLines: 3,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Color _hexToColor(String hexString) {
+    final buffer = StringBuffer();
+    if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
+    buffer.write(hexString.replaceFirst('#', ''));
+    return Color(int.parse(buffer.toString(), radix: 16));
+  }
+
+  int _calcularProgresso() {
+    int totalPerguntas = 0;
+    int perguntasRespondidas = 0;
+
+    for (int i = 0; i < blocosPerguntas.length; i++) {
+      for (String pergunta in blocosPerguntas[i]) {
+        totalPerguntas++;
+        if (blocosRespostas[i][pergunta] != null) {
+          perguntasRespondidas++;
+        }
+      }
+    }
+
+    return totalPerguntas > 0
+        ? (perguntasRespondidas * 100 / totalPerguntas).round()
+        : 0;
+  }
+
+  Widget _buildCamposFormulario() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 20),
-        Text(
-          nomesBlocos[index], // Aqui está o nome customizável do bloco
-          style: const TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Color(0xFF2C3E50),
-          ),
-        ),
-        const SizedBox(height: 10),
-        ...blocosPerguntas[index].map((pergunta) {
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(pergunta),
-              Row(
-                children:
-                    ['C', 'NC', 'NA'].map((resposta) {
-                      return Expanded(
-                        child: RadioListTile<String>(
-                          title: Text(resposta),
-                          value: resposta,
-                          groupValue: blocosRespostas[index][pergunta],
-                          onChanged: (value) {
-                            setState(() {
-                              blocosRespostas[index][pergunta] = value!;
-                            });
-                          },
-                        ),
-                      );
-                    }).toList(),
-              ),
-            ],
-          );
-        }).toList(),
-        const SizedBox(height: 10),
+        // Data e Hora
+        const Text('Data e Hora da Auditoria *'),
+        const SizedBox(height: 8),
         TextFormField(
-          controller: blocosConsideracoes[index],
+          controller: _dataHoraController,
           decoration: const InputDecoration(
-            labelText: 'Considerações',
             border: OutlineInputBorder(),
+            hintText: 'dd/mm/aaaa hh:mm',
+            prefixIcon: Icon(Icons.calendar_today),
           ),
-          maxLines: 3,
+          readOnly: true,
+          onTap: () async {
+            FocusScope.of(context).requestFocus(FocusNode());
+            final date = await showDatePicker(
+              context: context,
+              initialDate: DateTime.now(),
+              firstDate: DateTime(2000),
+              lastDate: DateTime(2100),
+            );
+            if (date != null) {
+              final time = await showTimePicker(
+                context: context,
+                initialTime: TimeOfDay.now(),
+              );
+              if (time != null) {
+                setState(() {
+                  _dataHoraAuditoria = DateTime(
+                    date.year,
+                    date.month,
+                    date.day,
+                    time.hour,
+                    time.minute,
+                  );
+                  _dataHoraController.text =
+                      '${_dataHoraAuditoria!.day.toString().padLeft(2, '0')}/'
+                      '${_dataHoraAuditoria!.month.toString().padLeft(2, '0')}/'
+                      '${_dataHoraAuditoria!.year} '
+                      '${_dataHoraAuditoria!.hour.toString().padLeft(2, '0')}:'
+                      '${_dataHoraAuditoria!.minute.toString().padLeft(2, '0')}';
+                });
+              }
+            }
+          },
+          validator:
+              (value) =>
+                  _dataHoraAuditoria == null ? 'Campo obrigatório' : null,
+        ),
+        const SizedBox(height: 16),
+
+        // Auditor
+        const Text('Auditor *'),
+        DropdownButtonFormField<String>(
+          value: _auditorSelecionado,
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            prefixIcon: Icon(Icons.person),
+          ),
+          items:
+              auditores
+                  .map((a) => DropdownMenuItem(value: a, child: Text(a)))
+                  .toList(),
+          onChanged: (value) {
+            setState(() {
+              _auditorSelecionado = value;
+              _mostrarCampoOutroAuditor = value == 'Outro...';
+              if (value != 'Outro...') {
+                _outroAuditorController.clear();
+              }
+            });
+          },
+          validator: (value) => value == null ? 'Selecione um auditor' : null,
+        ),
+        if (_mostrarCampoOutroAuditor) ...[
+          const SizedBox(height: 8),
+          TextFormField(
+            controller: _outroAuditorController,
+            decoration: const InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Nome do Auditor',
+              prefixIcon: Icon(Icons.edit),
+            ),
+            validator: (value) {
+              if (_mostrarCampoOutroAuditor &&
+                  (value == null || value.isEmpty)) {
+                return 'Informe o nome do auditor';
+              }
+              return null;
+            },
+          ),
+        ],
+        const SizedBox(height: 16),
+
+        // Setor
+        const Text('Setor *'),
+        DropdownButtonFormField<String>(
+          value: _setorSelecionado,
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            prefixIcon: Icon(Icons.business),
+          ),
+          items:
+              setores
+                  .map((s) => DropdownMenuItem(value: s, child: Text(s)))
+                  .toList(),
+          onChanged: (value) {
+            setState(() {
+              _setorSelecionado = value;
+            });
+          },
+          validator: (value) => value == null ? 'Selecione um setor' : null,
         ),
       ],
     );
@@ -226,184 +470,101 @@ class _InternaPageState extends State<InternaPage> {
 
   @override
   Widget build(BuildContext context) {
+    int progresso = _calcularProgresso();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Auditoria Interna'),
-        centerTitle: true,
         backgroundColor: const Color(0xFF2979D4),
-      ),
-      body: Center(
-        child: Container(
-          margin: const EdgeInsets.all(20),
-          padding: const EdgeInsets.all(30),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(12),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.1),
-                blurRadius: 12,
-                offset: const Offset(0, 4),
-              ),
-            ],
-          ),
-          constraints: const BoxConstraints(maxWidth: 600),
-          child: SingleChildScrollView(
-            child: Form(
-              key: _formKey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Auditoria Interna',
-                    style: TextStyle(
-                      fontSize: 24,
-                      color: Color(0xFF2C3E50),
-                      fontWeight: FontWeight.bold,
-                    ),
-                    textAlign: TextAlign.center,
+        foregroundColor: Colors.white,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 4,
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Text(
+                  '$progresso%',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF2979D4),
                   ),
-                  const SizedBox(height: 25),
-                  const Text('Data e Hora da Auditoria *'),
-                  const SizedBox(height: 8),
-                  TextFormField(
-                    decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: 'dd/mm/aaaa hh:mm',
-                    ),
-                    onTap: () async {
-                      FocusScope.of(context).requestFocus(FocusNode());
-                      final date = await showDatePicker(
-                        context: context,
-                        initialDate: DateTime.now(),
-                        firstDate: DateTime(2000),
-                        lastDate: DateTime(2100),
-                      );
-                      if (date != null) {
-                        final time = await showTimePicker(
-                          context: context,
-                          initialTime: TimeOfDay.now(),
-                        );
-                        if (time != null) {
-                          setState(() {
-                            _dataHoraAuditoria = DateTime(
-                              date.year,
-                              date.month,
-                              date.day,
-                              time.hour,
-                              time.minute,
-                            );
-                          });
-                        }
-                      }
-                    },
-                    readOnly: true,
-                    controller: TextEditingController(
-                      text:
-                          _dataHoraAuditoria != null
-                              ? "${_dataHoraAuditoria!.day.toString().padLeft(2, '0')}/"
-                                  "${_dataHoraAuditoria!.month.toString().padLeft(2, '0')}/"
-                                  "${_dataHoraAuditoria!.year} "
-                                  "${_dataHoraAuditoria!.hour.toString().padLeft(2, '0')}:"
-                                  "${_dataHoraAuditoria!.minute.toString().padLeft(2, '0')}"
-                              : '',
-                    ),
-                    validator:
-                        (value) =>
-                            _dataHoraAuditoria == null
-                                ? 'Campo obrigatório'
-                                : null,
-                  ),
-                  const SizedBox(height: 16),
-                  const Text('Auditor *'),
-                  DropdownButtonFormField<String>(
-                    value: _auditorSelecionado,
-                    decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
-                    ),
-                    items:
-                        auditores
-                            .map(
-                              (a) => DropdownMenuItem(value: a, child: Text(a)),
-                            )
-                            .toList(),
-                    onChanged: (value) {
-                      setState(() {
-                        _auditorSelecionado = value;
-                        _mostrarCampoOutroAuditor = value == 'Outro...';
-                      });
-                    },
-                    validator:
-                        (value) =>
-                            value == null ? 'Selecione um auditor' : null,
-                  ),
-                  if (_mostrarCampoOutroAuditor) ...[
-                    const SizedBox(height: 10),
-                    TextFormField(
-                      controller: _outroAuditorController,
-                      decoration: const InputDecoration(
-                        labelText: 'Informe o nome do auditor',
-                        border: OutlineInputBorder(),
-                      ),
-                      validator: (value) {
-                        if (_mostrarCampoOutroAuditor &&
-                            (value == null || value.isEmpty)) {
-                          return 'Por favor, informe o nome do auditor';
-                        }
-                        return null;
-                      },
-                    ),
-                  ],
-                  const SizedBox(height: 16),
-                  const Text('Setor *'),
-                  DropdownButtonFormField<String>(
-                    value: _setorSelecionado,
-                    decoration: const InputDecoration(
-                      border: OutlineInputBorder(),
-                    ),
-                    items:
-                        setores
-                            .map(
-                              (s) => DropdownMenuItem(value: s, child: Text(s)),
-                            )
-                            .toList(),
-                    onChanged: (value) {
-                      setState(() {
-                        _setorSelecionado = value;
-                      });
-                    },
-                    validator:
-                        (value) => value == null ? 'Selecione um setor' : null,
-                  ),
-                  ...List.generate(10, (index) => _buildBloco(index)),
-                  const SizedBox(height: 32),
-                  ElevatedButton(
-                    onPressed: () {
-                      if (_formKey.currentState!.validate()) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text('Dados salvos!')),
-                        );
-                      }
-                    },
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      backgroundColor: const Color(0xFF2979D4),
-                      foregroundColor: Colors.white,
-                      textStyle: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                    ),
-                    child: const Text('Salvar'),
-                  ),
-                ],
+                ),
               ),
             ),
           ),
-        ),
+        ],
+      ),
+      body: Column(
+        children: [
+          // Barra de progresso
+          LinearProgressIndicator(
+            value: progresso / 100,
+            backgroundColor: Colors.grey[300],
+            valueColor: AlwaysStoppedAnimation<Color>(
+              progresso == 100 ? Colors.green : const Color(0xFF2979D4),
+            ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(16),
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Campos do formulário
+                    _buildCamposFormulario(),
+
+                    const SizedBox(height: 24),
+
+                    // Blocos de perguntas
+                    ...List.generate(10, (index) => _buildBloco(index)),
+
+                    const SizedBox(height: 24),
+
+                    // Botão
+                    Center(
+                      child: ElevatedButton.icon(
+                        onPressed:
+                            progresso == 100
+                                ? () {
+                                  if (_formKey.currentState?.validate() ??
+                                      false) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                        content: Text('Dados salvos!'),
+                                      ),
+                                    );
+                                  }
+                                }
+                                : null,
+                        icon: const Icon(Icons.save),
+                        label: const Text('Salvar'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF2979D4),
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 24,
+                            vertical: 16,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

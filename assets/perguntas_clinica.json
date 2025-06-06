@@ -1,0 +1,310 @@
+{
+  "blocos": [
+    {
+      "id": "1",
+      "titulo": "Prontuário",
+      "cor": "#2979D4",
+      "descricao": "Avaliação completa da documentação no prontuário",
+      "perguntas": [
+        {
+          "id": "1.1",
+          "titulo": "Documentação Clínica",
+          "perguntas": [
+            {
+              "texto": "Está claro o motivo da admissão?",
+              "resposta": null
+            },
+            {
+              "texto": "Há registro do plano terapêutico elaborado pelo médico?",
+              "resposta": null
+            },
+            {
+              "texto": "O plano terapêutico condiz com o quadro clínico do paciente?",
+              "resposta": null
+            },
+            {
+              "texto": "Há registro do cumprimento das metas estabelecidas no plano terapêutico multidisciplinar?",
+              "resposta": null
+            },
+            {
+              "texto": "Há atualização do diagnóstico de entrada de acordo com a evolução clínica do paciente?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "titulo": "Registros Multidisciplinares",
+          "perguntas": [
+            {
+              "texto": "Há registro do projeto terapêutico elaborado pela equipe multidisciplinar? (enfermeiro, nutricionista, TO, FISIO, Farmacêutico, etc.)",
+              "resposta": null
+            },
+            {
+              "texto": "O projeto terapêutico está atualizado?",
+              "resposta": null
+            },
+            {
+              "texto": "O projeto terapêutico condiz com o quadro clínico do paciente?",
+              "resposta": null
+            },
+            {
+              "texto": "O projeto terapêutico está descrito com informações claras e objetivas e contempla a equipe multiprofissional?",
+              "resposta": null
+            },
+            {
+              "texto": "Há registro do processo de enfermagem completo (avaliação, exame físico, diagnóstico, scores, intervenção de enfermagem)?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.3",
+          "titulo": "Avaliações Especializadas",
+          "perguntas": [
+            {
+              "texto": "Registro da Triagem e Avaliação do risco nutricional em até 72 horas da admissão?",
+              "resposta": null
+            },
+            {
+              "texto": "Há registro da evolução Nutricional conforme risco classificado?",
+              "resposta": null
+            },
+            {
+              "texto": "Evolução da fisioterapia está condizente com a meta terapêutica?",
+              "resposta": null
+            },
+            {
+              "texto": "Registro da identificação e avaliação de risco para o paciente?",
+              "resposta": null
+            },
+            {
+              "texto": "Há evidência de todos os scores de avaliação do risco (quando aplicável)?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.4",
+          "titulo": "Gestão de Medicamentos",
+          "perguntas": [
+            {
+              "texto": "Se o paciente faz uso de medicamentos próprios, Há evidências da conciliação medicamentosa na admissão?",
+              "resposta": null
+            },
+            {
+              "texto": "Há registro de reconciliação medicamentosa nas transições do cuidado?",
+              "resposta": null
+            },
+            {
+              "texto": "Há registro da Farmácia Clínica em prontuário dentro do prazo estabelecido?",
+              "resposta": null
+            },
+            {
+              "texto": "Há evidências da avaliação de risco farmacêutica e reavaliação conforme preconizado no score?",
+              "resposta": null
+            },
+            {
+              "texto": "As abreviações, símbolos e designações de dose da Lista de Abreviações Perigosas não são usados em formulários ou rótulos gerados pela farmácia?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.5",
+          "titulo": "Protocolos Clínicos",
+          "perguntas": [
+            {
+              "texto": "SEPSE: o protocolo foi aberto em tempo oportuno e baseado nos critérios de abertura?",
+              "resposta": null
+            },
+            {
+              "texto": "SEPSE: a hora ouro do protocolo foi respeitada?",
+              "resposta": null
+            },
+            {
+              "texto": "SEPSE: as etapas II e III do protocolo foram cumpridas / registradas?",
+              "resposta": null
+            },
+            {
+              "texto": "HPP: o formulário de HPP foi evidenciado em prontuário?",
+              "resposta": null
+            },
+            {
+              "texto": "HPP: Há evidência de avaliação do risco de HPP na admissão e durante a internação conforme preconizado?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.6",
+          "titulo": "Processos Assistenciais",
+          "perguntas": [
+            {
+              "texto": "Há registros de Sinais Vitais conforme a prescrição (médica e de enfermagem)?",
+              "resposta": null
+            },
+            {
+              "texto": "Há evidência da avaliação do Score de deterioração a cada verificação de sinais vitais ou quando houver alterações?",
+              "resposta": null
+            },
+            {
+              "texto": "Evidência de todo processo de realização de exames (solicitação, realização, e resultados)?",
+              "resposta": null
+            },
+            {
+              "texto": "O formulário de SBAR foi realizado com recomendações claras?",
+              "resposta": null
+            },
+            {
+              "texto": "Há evidência da visita multiprofissional registrada?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "1.7",
+          "titulo": "Alta Hospitalar",
+          "perguntas": [
+            {
+              "texto": "Plano/Orientações de alta registrado?",
+              "resposta": null
+            },
+            {
+              "texto": "No sumário de alta a evolução da internação contempla toda a história clínica (início e desfecho) do paciente?",
+              "resposta": null
+            },
+            {
+              "texto": "Sumário de alta está com diagnóstico atualizado?",
+              "resposta": null
+            },
+            {
+              "texto": "Em caso de óbito, há registro de evolução do óbito pela equipe multiprofissional?",
+              "resposta": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "titulo": "Questões Relativas aos Colaboradores",
+      "cor": "#4CAF50",
+      "descricao": "Avaliação do conhecimento e práticas da equipe",
+      "perguntas": [
+        {
+          "id": "2.1",
+          "titulo": "Conhecimento da Equipe",
+          "perguntas": [
+            {
+              "texto": "Todos os profissionais demonstram conhecimento dos protocolos institucionais?",
+              "resposta": null
+            },
+            {
+              "texto": "A equipe conhece os indicadores de qualidade do setor?",
+              "resposta": null
+            },
+            {
+              "texto": "Os colaboradores receberam treinamento sobre prevenção de infecções?",
+              "resposta": null
+            },
+            {
+              "texto": "A equipe sabe operar os equipamentos críticos do setor?",
+              "resposta": null
+            },
+            {
+              "texto": "Os profissionais conhecem as políticas de segurança do paciente?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "titulo": "Práticas Assistenciais",
+          "perguntas": [
+            {
+              "texto": "A equipe realiza higienização das mãos conforme protocolo?",
+              "resposta": null
+            },
+            {
+              "texto": "Os profissionais utilizam EPIs adequadamente?",
+              "resposta": null
+            },
+            {
+              "texto": "A equipe segue os protocolos de identificação do paciente?",
+              "resposta": null
+            },
+            {
+              "texto": "Há registro de capacitações recentes da equipe?",
+              "resposta": null
+            },
+            {
+              "texto": "Os colaboradores participam ativamente das reuniões de equipe?",
+              "resposta": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "titulo": "Questões Relacionadas ao Paciente",
+      "cor": "#FF9800",
+      "descricao": "Avaliação da experiência do paciente",
+      "perguntas": [
+        {
+          "id": "3.1",
+          "titulo": "Comunicação",
+          "perguntas": [
+            {
+              "texto": "O paciente recebeu informações claras sobre seu tratamento?",
+              "resposta": null
+            },
+            {
+              "texto": "O paciente teve oportunidade de tirar dúvidas com a equipe?",
+              "resposta": null
+            },
+            {
+              "texto": "As orientações fornecidas foram compreendidas pelo paciente?",
+              "resposta": null
+            },
+            {
+              "texto": "O paciente foi informado sobre os medicamentos prescritos?",
+              "resposta": null
+            },
+            {
+              "texto": "O paciente foi orientado sobre os cuidados pós-alta?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "titulo": "Conforto e Segurança",
+          "perguntas": [
+            {
+              "texto": "O paciente relata se sentir seguro durante a internação?",
+              "resposta": null
+            },
+            {
+              "texto": "As queixas de dor foram adequadamente atendidas?",
+              "resposta": null
+            },
+            {
+              "texto": "O paciente teve privacidade respeitada durante os procedimentos?",
+              "resposta": null
+            },
+            {
+              "texto": "O ambiente de atendimento estava limpo e organizado?",
+              "resposta": null
+            },
+            {
+              "texto": "O paciente foi tratado com respeito e dignidade?",
+              "resposta": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
