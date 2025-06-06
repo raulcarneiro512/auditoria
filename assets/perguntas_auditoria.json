@@ -380,32 +380,207 @@
       "perguntas": [
         {
           "id": "3.1",
-          "titulo": "Armazenamento",
+          "titulo": "Uso racional de antimicrobianos ",
           "perguntas": [
             {
               "id": "3.1.1",
-              "texto": "Os medicamentos estão armazenados adequadamente?",
+              "texto": "Existe e é implamtado o programa de uso racional de antimicrobianos?",
               "resposta": null
             },
             {
               "id": "3.1.2",
-              "texto": "Medicamentos de alta vigilância estão identificados?",
+              "texto": "O programa especifica quem é o responsável pela sua implementação?",
+              "resposta": null
+            },
+            {
+              "id": "3.1.3",
+              "texto": "O programa é multidisciplinar, com farmacêuticos, infectologistas, especialistas em CCIH, médicos, equipe de microbiologia, enfermeiros, administradores hospitalares, especialistas em sistemas de informação, entre outros?",
+              "resposta": null
+            },
+            {
+              "id": "3.1.4",
+              "texto": "O programa inclui intervenções para otimizar o uso de agentes antimicrobianos, tais como auditoria e feedback, um guia farmacoterapêutico com indicações aprovadas, ensino, receituários, diretrizes e processos clínicos, estratégias para racionalização ou diminuição de terapias, otimização de doses e conversão de agentes antimicrobianos de parenteral para oral?",
+              "resposta": null
+            },
+            {
+              "id": "3.1.5",
+              "texto": "O programa é avaliado continuamente e os resultados são divulgados às partes interessadas na organização?",
               "resposta": null
             }
           ]
         },
         {
           "id": "3.2",
-          "titulo": "Administração",
+          "titulo": "Eletrólitos concentrados",
           "perguntas": [
             {
               "id": "3.2.1",
-              "texto": "É realizada dupla checagem na administração?",
+              "texto": "Pelo menos uma vez por ano, é feita uma auditoria nas áreas assistenciais dos seguintes eletrólitos concentrados: Cálcio (todos os sais): concentrações acima ou igual a 10%, Sulfato de magnésio: concentrações acima de 20%, Potássio (todos os sais): concentrações acima ou igual a 2 mmol/ml (2mEq/ml), Sódio (acetato e fosfato): concentrações acima ou igual a 4 mmol/ml, Cloreto de sódio: concentrações acima de 0,9%?",
               "resposta": null
             },
             {
               "id": "3.2.2",
-              "texto": "O paciente é identificado antes da administração?",
+              "texto": "Evita-se estocar nas áreas assistenciais eletrólitos concentrados?",
+              "resposta": null
+            },
+            {
+              "id": "3.2.3",
+              "texto": "Quando é necessário ter eletrólitos concentrados em algumas áreas assistenciais, o comitê multidisciplinar da organização para assistência farmacêutica analisa e aprova os motivos de tal disponibilidade e as proteções instaladas para minimizar o risco de erro?",
+              "resposta": null
+            }
+            
+          ]
+        },
+        {
+          "id": "3.3",
+          "titulo": "Segurança no uso da heparina",
+          "perguntas": [
+            {
+              "id": "3.3.1",
+              "texto": "A organização realiza pelo menos uma vez por ano uma auditoria de produtos de heparina não fracionada e de baixo peso molecular nas áreas assistenciais?",
+              "resposta": null
+            },
+            {
+              "id": "3.3.2",
+              "texto": "Não se estoca heparina não fracionada de alta dose (50.000 unidades total por recipiente) nas áreas assistenciais?",
+              "resposta": null
+            },
+            {
+              "id": "3.3.3",
+              "texto": "São adotadas medidas para limitar a disponibilidade de heparina nas áreas assistenciais? Heparina de baixo peso molecular: UTI, Heparina não fracionada (dose elevada) é fornecido apenas sob demanda, quando necessário, Heparina não fracionada para uso intravenoso é fornecida para pacientes específicos, quando necessário.",
+              "resposta": null
+            },
+            {
+              "id": "3.3.4",
+              "texto": "Quando for necessário que a heparina esteja disponíveis em determinadas áreas assistenciais, um comitê interdisciplinar de gestão de medicações revisará e aprovará os motivos para disponibilidade e as proteções instaladas para minimizar o risco de erro?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "3.4",
+          "titulo": "Medicação de Alta Vigilância (MAV)",
+          "perguntas": [
+            {
+              "id": "3.4.1",
+              "texto": "Existe uma política que rege a gestão de Medicações de Alta Vigilância (MAV)?",
+              "resposta": null
+            },
+            {
+              "id": "3.4.2",
+              "texto": "A política define o papel ou cargo das pessoas responsáveis pela implementação e seu monitoramento?",
+              "resposta": null
+            },
+            {
+              "id": "3.4.3",
+              "texto": "A política inclui uma lista de MAV identificadas pela organização?",
+              "resposta": null
+            },
+            {
+              "id": "3.4.4",
+              "texto": "A política inclui procedimentos para estocar, prescrever, preparar, administrar, dispensar e documentar toda medicação identificada como MAV?",
+              "resposta": null
+            },
+            {
+              "id": "3.4.5",
+              "texto": "As concentrações e opções de volume das MAV são limitadas e padronizadas?",
+              "resposta": null
+            },
+            {
+              "id": "3.4.6",
+              "texto": "São feitas auditorias regulares nas áreas assistenciais quanto às MAV?",
+              "resposta": null
+            },
+            {
+              "id": "3.4.7",
+              "texto": "A política é continuamente atualizada?",
+              "resposta": null
+            },
+            {
+              "id": "3.4.8",
+              "texto": "Os membros da equipe recebem continuamente informações e treinamento sobre a gestão de MAV?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "3.5",
+          "titulo": "Armazenamento",
+          "perguntas": [
+            {
+              "id": "3.5.1",
+              "texto": "As instruções e guias de usuário de cada tipo de BIC podem ser acessados com facilidade em todos os momentos?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.2",
+              "texto": "Os membros da equipe recebem treinamento inicial e treinamentos de atualização sobre o uso seguro de BIC?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.3",
+              "texto": "Quando são recém-contratados pela organização ou são colaboradores temporários trabalhando em uma nova área de prestação de serviços?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.4",
+              "texto": "Quando retornam ao trabalho após uma ausência prolongada?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.5",
+              "texto": "Quando um novo tipo de bomba de infusão é introduzida ou quando as BIC  existentes passam por uma modernização?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.6",
+              "texto": "Quando a avaliação de competência indicar a necessidade de treinamento de atualização?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.7",
+              "texto": "Quando as BIC são usadas muito infrequentemente, é realizada uma avaliação de competências prévia?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.8",
+              "texto": "Quando os clientes recebem BIC operadas pelos clientes (por ex., analgesia controlada pelo paciente, bombas de insulina), os clientes e as famílias recebem treinamento, que é documentado, sobre o modo de usá-las com segurança?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.9",
+              "texto": "A competência dos membros da equipe no uso seguro de BIC é avaliada e documentada pelo menos a cada dois anos? Quando as BIC são usadas muito infrequentemente, é realizada uma avaliação de competências prévia?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.10",
+              "texto": "A eficácia da abordagem é avaliada através de investigação de incidentes, análise de indicadores, monitoramento de competencia da BIC, opnião de paciente, familiar e equipe?",
+              "resposta": null
+            },
+            {
+              "id": "3.5.11",
+              "texto": "Quando as avaliações de segurança no uso das BIC indicam a necessidade de melhorias, são feitos ajustes ou o treinamento passa por uma melhoria?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "3.6",
+          "titulo": "Segurança dos narcóticos",
+          "perguntas": [
+            {
+              "id": "3.6.1",
+              "texto": "Pelo menos uma vez por ano, é feita uma auditoria nas áreas assistenciais dos seguintes produtos narcóticos: Fentanil, HIDROmorfona, e Morfina?",
+              "resposta": null
+            },
+            {
+              "id": "3.6.2",
+              "texto": "Evita-se estocar nas áreas assistenciais os seguintes produtos narcóticos: Fentanil, HIDROmorfona, e Morfina?",
+              "resposta": null
+            },
+            {
+              "id": "3.6.3",
+              "texto": "Quando for necessário ter produtos narcóticos (opioides) em determinadas áreas assistenciais, o comitê multidisciplinar de gestão de medicações analisa e aprova os motivos de tal disponibilidade e as proteções instaladas para minimizar o risco de erro?",
               "resposta": null
             }
           ]
