@@ -27,9 +27,48 @@ class _InternaPageState extends State<InternaPage> {
   ];
 
   final List<String> setores = [
-    'Internação 1',
-    'Internação 2',
-    'UTI',
+    "Ala Santa Clara",
+    "Ala Santa Ludovina",
+    "Ala Santa Maria",
+    "Ala Santa Marta",
+    "Ala Santa Rita",
+    "Ala Santa Terezinha",
+    "Ala Santana",
+    "Ala São Francisco",
+    "Ala São Paulo",
+    "Ala São José",
+    "AMIU",
+    "Casa da gestante",
+    "Centro Obstétrico",
+    "CPN",
+    "Enfermaria Menino Jesus",
+    "Enfermaria Maria Goreth",
+    "Enfermaria Santo Expedito",
+    "Enfermaria Frei Caetano B",
+    "Centro cirúrgico pediátrico",
+    "Centro cirúrgico adulto",
+    "TRS Pediátrica",
+    "UCI A1",
+    "UCI A2",
+    "UCI B",
+    "UCINCA",
+    "UEO",
+    "UTI Adulto - Almir Gabriel",
+    "UTI Adulto - Centenário",
+    "UTI NEO A1",
+    "UTI NEO A2",
+    "UTI NEO A3",
+    "UTI NEO A4",
+    "UTI NEO B1",
+    "UTI NEO B2",
+    "UTI Pediátrica - São Cosme",
+    "UTI Pediátrica - São Damião",
+    "UTI Pediátrica - Sidney Barbosa",
+    "Ambulatório - Mulher",
+    "Ambulatório - Hepático",
+    "Ambulatório - Especialidades clínicas",
+    "Ambulatório - Pediátrico",
+    "Ambulatório - Cirúrgico",
     'Outros...',
   ];
 
@@ -169,15 +208,15 @@ class _InternaPageState extends State<InternaPage> {
   // Cores para os blocos (seguindo o padrão do RopsPage)
   final List<String> coresBlocos = [
     '#2979D4', // Azul
-    '#4CAF50', // Verde
-    '#FF9800', // Laranja
-    '#9C27B0', // Roxo
-    '#F44336', // Vermelho
-    '#00BCD4', // Ciano
-    '#795548', // Marrom
-    '#607D8B', // Azul acinzentado
-    '#E91E63', // Rosa
-    '#3F51B5', // Índigo
+    '#2979D4', // Verde
+    '#2979D4', // Laranja
+    '#2979D4', // Roxo
+    '#2979D4', // Vermelho
+    '#2979D4', // Ciano
+    '#2979D4', // Marrom
+    '#2979D4', // Azul acinzentado
+    '#2979D4', // Rosa
+    '#2979D4', // Índigo
   ];
 
   @override

@@ -586,6 +586,447 @@
           ]
         }
       ]
+    },
+     {
+      "id": 4,
+      "titulo": "VIDA PROFISSIONAL - FORÇA DE TRABALHO",
+      "descricao": "Criar uma vida profissional e um ambiente físico que apoie a prestação segura de assistência e serviços",
+      "cor": "#2979D4",
+      "perguntas": [
+        {
+          "id": "4.1",
+          "titulo": "Programa de manutenção preventiva",
+          "perguntas": [
+            {
+              "id": "4.1.1",
+              "texto": "Existe um programa de manutenção preventiva vigente para todo instrumental médico, equipamentos médicos e tecnologias médicas?",
+              "resposta": null
+            },
+            {
+              "id": "4.1.2", 
+              "texto": "Existem relatórios documentados de manutenção preventiva?",
+              "resposta": null
+            },
+            {
+              "id": "4.1.3",
+              "texto": "Existe um processo para avaliar a eficácia do programa de manutenção preventiva?",
+              "resposta": null
+            },
+            {
+              "id": "4.1.4",
+              "texto": "Existe acompanhamento documentado relacionado à investigação de incidentes e problemas envolvendo aparelhos, equipamentos e tecnologias médicas?",
+              "resposta": null
+            }
+            
+          ]
+        },
+        {
+          "id": "4.2",
+          "titulo": "4.2 Segurança do paciente: capacitação e treinamento",
+          "perguntas": [
+            {
+              "id": "1.2.1",
+              "texto": "Existe um treinamento anual sobre segurança do paciente que é adaptado às necessidades da organização e áreas de foco específicas da segurança do paciente?",
+              "resposta": null
+            }
+            
+          ]
+        },
+        {
+          "id": "4.3",
+          "titulo": "Prevenção de violência no local de trabalho",
+          "perguntas": [
+            {
+              "id": "4.3.1",
+              "texto": "Existe uma política redigida de prevenção da violência no ambiente de trabalho?",
+              "resposta": null
+            },
+            {
+              "id": "4.3.2", 
+              "texto": "A política foi elaborada em consulta com os membros da equipe e voluntários?",
+              "resposta": null
+            },
+            {
+              "id": "4.3.3",
+              "texto": "A política indica o indivíduo ou cargo responsáveis pela implementação e monitoramento da adesão à política?",
+              "resposta": null
+            },
+            {
+              "id": "4.3.4",
+              "texto": "São realizadas avaliações de risco para estimar o risco de violência no ambiente de trabalho?",
+              "resposta": null
+            },
+            {
+              "id": "4.3.5",
+              "texto": "Existem procedimentos para que os membros da equipe relatem em sigilo incidentes de violência no ambiente de trabalho?",
+              "resposta": null
+            },
+            {
+              "id": "4.3.6",
+              "texto": "Existem procedimentos para investigar e responder a incidentes de violência no ambiente de trabalho?",
+              "resposta": null
+            },
+            {
+              "id": "4.3.7",
+              "texto": "Os líderes da organização analisam os relatórios trimestrais de incidentes de violência no ambiente de trabalho e usam essas informações para aprimorar a segurança, reduzir o número de incidentes de violência e aperfeiçoar a política de prevenção de violência no ambiente de trabalho?",
+              "resposta": null
+            },
+            {
+              "id": "4.3.8",
+              "texto": "São dadas informações e treinamento aos membros da equipe sobre prevenção de violência no ambiente de trabalho?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "4.4",
+          "titulo": "Fluxo de clientes ",
+          "perguntas": [
+            {
+              "id": "4.4.1",
+              "texto": " Os líderes da organização, incluindo médicos, têm a responsabilidade de trabalhar proativamente para melhorar o fluxo de clientes e atenuar a superlotação do serviço de emergência?",
+              "resposta": null
+            },
+            {
+              "id": "4.4.2", 
+              "texto": "As não conformidades são usadas para identificar variações na demanda e obstáculos à execução oportuna dos serviços de emergência?",
+              "resposta": null
+            },
+            {
+              "id": "4.4.3",
+              "texto": "Existe uma abordagem documentada e coordenada para melhorar o fluxo de clientes e tratar da superlotação do serviço de emergência?",
+              "resposta": null
+            },
+            {
+              "id": "4.4.4",
+              "texto": "Em caso de superlotação, está descrito papéis e responsabilidades?",
+              "resposta": null
+            },
+            {
+              "id": "4.4.5",
+              "texto": "É realizado o monitoramento de indicadores que visem melhoria no fluxo de clientes?",
+              "resposta": null
+            },
+            {
+              "id": "4.4.6",
+              "texto": "São implementadas intervenções para melhorar o fluxo de clientes, que tratam de obstáculos identificados e variações na demanda?",
+              "resposta": null
+            },
+            {
+              "id": "4.4.7",
+              "texto": "Quando necessário, é aplicado plano de contingência para lidar com superlotação, que reduzem os riscos aos clientes e membros da equipe?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "4.5",
+          "titulo": "Plano de Segurança do Paciente",
+          "perguntas": [
+            {
+              "id": "4.5.1",
+              "texto": "As questões de segurança do paciente na organização são avaliadas?",
+              "resposta": null
+            },
+            {
+              "id": "4.5.2", 
+              "texto": "Existem um plano de segurança do paciente na instituição?",
+              "resposta": null
+            },
+            {
+              "id": "4.5.3",
+              "texto": "O plano inclui a segurança do paciente como uma meta ou prioridade estratégica redigida?",
+              "resposta": null
+            },
+            {
+              "id": "4.5.4",
+              "texto": "São alocados recursos para respaldar a implementação do plano de segurança do paciente?",
+              "resposta": null
+            }
+          
+          ]
+        }
+      ]
+    },
+     {
+      "id": 5,
+      "titulo": "PREVENÇÃO E CONTROLE DE INFECÇÃO",
+      "descricao": "Reduzir o risco de infecções associadas ao atendimento da saúde e o seu impacto nos resultados",
+      "cor": "#2979D4",
+      "perguntas": [
+        {
+          "id": "5.1",
+          "titulo": "Adesão às práticas de higiene das mãos ",
+          "perguntas": [
+            {
+              "id": "5.5.1",
+              "texto": "É realizado o monitoramento do indicador de higienização das mãos na unidade?",
+              "resposta": null
+            },
+            {
+              "id": "5.5.2", 
+              "texto": "Os resultados são divididos com os membros da equipe?",
+              "resposta": null
+            },
+            {
+              "id": "5.5.3",
+              "texto": "Os resultados são usados para fazer melhorias?",
+              "resposta": null
+            }
+           
+          ]
+        },
+        {
+          "id": "5.2",
+          "titulo": "Higiene das mãos: capacitação e treinamento",
+          "perguntas": [
+            {
+              "id": "5.5.1",
+              "texto": "Os membros da equipe recebem informações sobre o protocolo de higiene das mãos?",
+              "resposta": null
+            }
+           
+          
+          ]
+        },
+        {
+          "id": "5.3",
+          "titulo": "Taxas de infecção",
+          "perguntas": [
+            {
+              "id": "5.3.1",
+              "texto": "As taxas de infecções hospitalares são rastreadas?",
+              "resposta": null
+            },
+            {
+              "id": "5.3.2", 
+              "texto": "Os surtos epidêmicos são analisados e são feitas recomendações para prevenir recorrências?",
+              "resposta": null
+            },
+            {
+              "id": "5.3.3",
+              "texto": "As informações sobre infecções hospitalares e recomendações originadas de análises de surtos epidêmicos são compartilhadas com os membros da equipe, diretoria e alta administração?",
+              "resposta": null
+            }
+           
+          ]
+        },
+        {
+          "id": "5.4",
+          "titulo": "Reprocessamento",
+          "perguntas": [
+            {
+              "id": "5.4.1",
+              "texto": "Existe evidência da eficácia dos processos e sistemas de limpeza, desinfecção e esterilização?",
+              "resposta": null
+            },
+            {
+              "id": "5.4.2", 
+              "texto": "Foram adotadas medidas para se examinar e aperfeiçoar os processos de limpeza, desinfecção e esterilização onde indicado?",
+              "resposta": null
+            }
+        
+          ]
+        }
+      ]
+    },
+     {
+      "id": 6,
+      "titulo": "AVALIAÇÃO DE RISCOS",
+      "descricao": "Identificar riscos de segurança inerentes à população de paciente",
+      "cor": "#2979D4",
+      "perguntas": [
+        {
+          "id": "6.1",
+          "titulo": "Prevenção contra quedas e redução de danos",
+          "perguntas": [
+            {
+              "id": "6.1.1",
+              "texto": "São aplicadas medidas de prevenção contra quedas, aplicáveis ao ambiente?",
+              "resposta": null
+            },
+            {
+              "id": "6.1.2", 
+              "texto": "A equipe, pacientes, famílias e cuidadores recebem informações/treinamento para evitar quedas e prevenir os danos causados por quedas?",
+              "resposta": null
+            },
+            {
+              "id": "6.1.3",
+              "texto": "A eficácia de programas de treinamento e do compartilhamento de informações relacionados à prevenção e redução de danos causados por quedas são avaliados regularmente? Os resultados são usados para fazer melhorias quando necessário?",
+              "resposta": null
+            },
+            {
+              "id": "6.1.4",
+              "texto": "Na admissão de pacientes, é feita  avaliação inicial de risco de quedas através da escala de Morse?",
+              "resposta": null
+            },
+            {
+              "id": "6.1.5",
+              "texto": "Os pacientes são reavaliados diariamente e toda vez que ocorre uma mudança significativa na sua condição clínica?",
+              "resposta": null
+            },
+            {
+              "id": "6.1.6",
+              "texto": "Há protocolo de prevenção de queda implantado e de conhecimento de todos?",
+              "resposta": null
+            },
+            {
+              "id": "6.1.7",
+              "texto": "As intervenções para prevenir quedas são registradas no prontuário e divulgadas à equipe?",
+              "resposta": null
+            },
+            {
+              "id": "6.1.8",
+              "texto": "A eficácia das atividades de prevenção de quedas e redução de danos é avaliada e os resultados são usados para fazer melhorias quando necessário?",
+              "resposta": null
+            }
+            
+          ]
+        },
+        {
+          "id": "6.2",
+          "titulo": "Prevenção de Lesão por pressão",
+          "perguntas": [
+            {
+              "id": "6.2.1",
+              "texto": "É feita avaliação inicial do risco de LPP na admissão, usando a escala de Braden ou correspondente?",
+              "resposta": null
+            },
+            {
+              "id": "6.2.2",
+              "texto": "O risco de LPP é avaliado diariamente e quando ocorre uma mudança no estado do paciente?",
+              "resposta": null
+            },
+            {
+              "id": "6.2.3",
+              "texto": "O Protocolo de prevenção de LPP descreve medidas e intervenções para prevenir desenvolvimento de LPP's?",
+              "resposta": null
+            },
+            {
+              "id": "6.2.4",
+              "texto": "Membros da equipe, pacientes, famílias e cuidadores recebem informações sobre os fatores de risco, protocolos e procedimentos para prevenir LPP?",
+              "resposta": null
+            },
+            {
+              "id": "6.2.5",
+              "texto": "A eficácia da prevenção de LPP é avaliada e os resultados são usados para fazer melhorias quando necessário?",
+              "resposta": null
+            }
+           
+          
+          ]
+        },
+        {
+          "id": "6.3",
+          "titulo": "Tratamento da pele e feridas ",
+          "perguntas": [
+            {
+              "id": "6.3.1",
+              "texto": "Existe protocolo  sobre  o tratamento de feridas e lesões de pele?",
+              "resposta": null
+            },
+            {
+              "id": "6.3.2", 
+              "texto": "Os membros da equipe têm acesso à formação/treinamento sobre o tratamento de feridas e lesões de pele?",
+              "resposta": null
+            },
+            {
+              "id": "6.3.3",
+              "texto": "Clientes, famílias e cuidadores recebem informações e treinamento sobre autotratamento de pele e feridas?",
+              "resposta": null
+            },
+            {
+              "id": "6.3.4",
+              "texto": "A avaliação baseada em evidências de novos clientes é usada para determinar ou confirmar o diagnóstico da ferida e elaborar um plano individualizado de atendimento que trate das causas?",
+              "resposta": null
+            },
+            {
+              "id": "6.3.5",
+              "texto": "Presta-se um tratamento de feridas e lesões de pele padronizado que otimiza a saúde da pele e promove a cicatrização?",
+              "resposta": null
+            },
+            {
+              "id": "6.3.6",
+              "texto": "É implementada uma documentação padronizada para criar um registro abrangente de todos os aspectos do tratamento de feridas e lesões de pele do cliente?",
+              "resposta": null
+            },
+            {
+              "id": "6.3.7",
+              "texto": "Existe um processo para compartilhar informações entre prestadores de serviços, especialmente em casos de transições do cuidado, sobre o tratamento de feridas e lesões de pele?",
+              "resposta": null
+            },
+            {
+              "id": "6.3.8",
+              "texto": "A eficácia do programa de tratamento de feridas e lesões de pele é monitorada e essas informações são usadas para fazer melhorias?",
+              "resposta": null
+            }
+          ]
+        },
+        {
+          "id": "6.4",
+          "titulo": "Profilaxia para tromboembolismo venosa (TEV) ",
+          "perguntas": [
+            {
+              "id": "6.4.1",
+              "texto": "Existe uma política ou diretriz escrita sobre profilaxia de TEV?",
+              "resposta": null
+            },
+            {
+              "id": "6.4.2", 
+              "texto": "Os pacientes sob risco de TEV são identificados e recebem profilaxia apropriada e informada com base em fatos?",
+              "resposta": null
+            },
+            {
+              "id": "6.4.3",
+              "texto": "São estabelecidas medidas para uma profilaxia de TEV, e é feita uma auditoria na implementação dessa profilaxia e essas informações são usadas para fazer melhorias nos serviços?",
+              "resposta": null
+            },
+            {
+              "id": "6.4.4",
+              "texto": "Os pacientes de cirurgias ortopédicas que exigem profilaxia após a alta são identificados, e existe um processo para que tenham profilaxia TEV após a alta?",
+              "resposta": null
+            },
+            {
+              "id": "6.4.5",
+              "texto": "São fornecidas informações aos pacientes e membros da equipe sobre os riscos de TEV e como prevenir a sua ocorrência?",
+              "resposta": null
+            }
+           
+          ]
+        },
+        {
+          "id": "6.5",
+          "titulo": "Prevenção de suicídio",
+          "perguntas": [
+            {
+              "id": "6.5.1",
+              "texto": "Existe sinalização dos pacientes com risco de suicídio?",
+              "resposta": null
+            },
+            {
+              "id": "6.5.2", 
+              "texto": "O risco de suicídio de cada paciente é avaliado em intervalos regulares ou conforme muda a necessidade?",
+              "resposta": null
+            },
+            {
+              "id": "6.5.3",
+              "texto": "As necessidades imediatas de segurança do paciente considerados sob risco de suicídio são abordadas?",
+              "resposta": null
+            },
+            {
+              "id": "6.5.4",
+              "texto": "São identificados tratamento e estratégias de monitoramento para pacientes considerados em risco de suicídio?",
+              "resposta": null
+            },
+            {
+              "id": "6.5.5",
+              "texto": "A implementação do tratamento e as estratégias de monitoramento são documentadas no PEP?",
+              "resposta": null
+            }
+           
+          ]
+        }
+      ]
     }
   ]
 }
